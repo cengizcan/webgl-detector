@@ -16,7 +16,7 @@ if (isWebGLSupported()){
   // WebGL is supported!
 }
 ```
-***Example in React**
+***Example in React***
 Suppose we have a component named `My3DAnimation` that requires WebGL:
 ```
 import React from 'react';
