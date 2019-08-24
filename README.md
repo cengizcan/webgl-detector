@@ -16,26 +16,7 @@ if (isWebGLSupported()){
   // WebGL is supported!
 }
 ```
-**Example in React**
 
-Suppose we have a component named `My3DAnimation` that requires WebGL:
-```javascript
-import React from 'react';
-import { isWebGLSupported } from 'webgl-detector';
-
-import My3DAnimation from '../My3DAnimation';
-
-const AnimationContainer = ({ foo, bar }) => (
-  <div>
-    {isWebGLSupported() ? (
-      <My3DAnimation foo={foo} bar={bar} />
-      ) : (
-      <p>WebGL is not supported</p>
-      )}
-  </div>
-);
-export default AnimationContainer;
-```
 # License
 
 MIT © Cengiz Can
