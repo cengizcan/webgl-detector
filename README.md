@@ -9,16 +9,16 @@ Test & mock friendly WebGL detection utility.
 npm install --save webgl-detector
 ```
 **Usage**
-```
+```javascript
 import { isWebGLSupported } from 'webgl-detector';
 
 if (isWebGLSupported()){
   // WebGL is supported!
 }
 ```
-***Example in React***
+**Example in React**
 Suppose we have a component named `My3DAnimation` that requires WebGL:
-```
+```javascript
 import React from 'react';
 import { isWebGLSupported } from 'webgl-detector';
 
