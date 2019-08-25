@@ -50,7 +50,7 @@ export default AnimationContainer;
 In our test file:
 ```javascript
 describe('<AnimationContainer />', () => {
-  // require mocked component with usual value
+  // require mocked module with usual value
   beforeEach(() => {
     require('webgl-detector').setValue(true);
   });
@@ -58,7 +58,7 @@ describe('<AnimationContainer />', () => {
     expect(something).toBe(true); // pseudo expect
   });
   it('should not render something if WebGL is not supported', () => {
-    // set module mock for WebGL disabled case
+    // set module mock value for WebGL disabled case
     require('webgl-detector').setValue(false);
     expect(something).toBe(false); // pseudo expect
   });
