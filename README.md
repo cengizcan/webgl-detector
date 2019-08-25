@@ -1,6 +1,6 @@
 # WebGL Detector
 
-[![dependencies Status](https://david-dm.org/cengizcan/webgl-detector.svg)](https://david-dm.org/cengizcan/webgl-detector) [![devDependencies Status](https://david-dm.org/cengizcan/webgl-detector/dev-status.svg)](https://david-dm.org/cengizcan/webgl-detector?type=dev) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![GitHub](https://img.shields.io/github/license/cengizcan/webgl-detector?style=flat-square) ![npm type definitions](https://img.shields.io/npm/types/webgl-detector?style=flat-square)
 
 Test & mock friendly WebGL detection utility.
 
@@ -70,3 +70,5 @@ Learn more on mocking Node Modules in [Jest documentation](https://jestjs.io/doc
 # License
 
 MIT © Cengiz Can
+
+![CircleCI](https://img.shields.io/circleci/build/gh/cengizcan/webgl-detector?style=flat-square&token=28279ff846840a5986a4b01ef014b9143e26ef46) ![David](https://img.shields.io/david/cengizcan/webgl-detector?style=flat-square) ![David](https://img.shields.io/david/dev/cengizcan/webgl-detector?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/webgl-detector?style=flat-square)
