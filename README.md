@@ -1,6 +1,6 @@
 # WebGL Detector
 
-[![dependencies Status](https://david-dm.org/cengizcan/webgl-detector.svg)](https://david-dm.org/cengizcan/webgl-detector) [![devDependencies Status](https://david-dm.org/cengizcan/webgl-detector/dev-status.svg)](https://david-dm.org/flexdinesh/npm-module-boilerplate?type=dev) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![dependencies Status](https://david-dm.org/cengizcan/webgl-detector.svg)](https://david-dm.org/cengizcan/webgl-detector) [![devDependencies Status](https://david-dm.org/cengizcan/webgl-detector/dev-status.svg)](https://david-dm.org/cengizcan/webgl-detector?type=dev) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Test & mock friendly WebGL detection utility.
 
@@ -21,13 +21,13 @@ if (isWebGLSupported()){
 Create a file at `__mocks__/webgl-detector.js`. Make sure `__mocks__` directory is adjacent to `node_modules`. 
 ```javascript
 // __mocks__/webgl-detector.js
-const deviceDetect = jest.genMockFromModule('webgl-detector');
+const webglDetector = jest.genMockFromModule('webgl-detector');
 
-deviceDetect.setValue = value => {
-  deviceDetect.isSupported = value;
+webglDetector.setValue = value => {
+  webglDetector.isSupported = value;
 };
-deviceDetect.isWebGLSupported = () => deviceDetect.isSupported;
-module.exports = deviceDetect;
+webglDetector.isWebGLSupported = () => webglDetector.isSupported;
+module.exports = webglDetector;
 ```
 Suppose we have an Container component named `AnimationContainer` and a renderer container named `MyAnimation`. If WebGL is supported, `AnimationContainer` returns `MyAnimation` component:
 ```javascript
