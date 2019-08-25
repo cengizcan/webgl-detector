@@ -29,7 +29,8 @@
     "es6",
     "browser",
     "testing",
-    "javascript"
+    "javascript",
+    "typescript"
   ],
   "author": "Cengiz Can <cengiz@linux.com>",
   "license": "MIT",
