@@ -6,7 +6,7 @@ import { isWebGLSupported } from '../index';
 // https://github.com/TypeStrong/ts-node/issues/55
 
 describe('WebGL detector tests', () => {
-  const setup = (contextEnabled:boolean, contextType:string) => {
+  const setup = (contextEnabled: boolean, contextType: string) => {
     Object.defineProperty(window, 'WebGLRenderingContext', {
       writable: true,
       value: contextEnabled ? true : null,
