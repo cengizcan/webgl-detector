@@ -5,3 +5,10 @@ export function isWebGLSupported(): boolean {
   }
   return false;
 }
+export function isWebGL2Supported(): boolean {
+  if (WebGLRenderingContext != null) {
+    const canvas: HTMLCanvasElement = document.createElement('canvas');
+    return canvas.getContext('webgl2') != null;
+  }
+  return false;
+}

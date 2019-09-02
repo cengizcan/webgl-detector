@@ -10,10 +10,14 @@ npm install --save webgl-detector
 ```
 **Usage**
 ```javascript
-import { isWebGLSupported } from 'webgl-detector';
+import { isWebGLSupported, isWebGL2Supported } from 'webgl-detector';
 
 if (isWebGLSupported()){
   // WebGL is supported!
+}
+// OR for WebGL2
+if (isWebGL2Supported()){
+  // WebGL2 is supported!
 }
 ```
 **Mocking - Jest & React**
@@ -64,7 +68,7 @@ describe('<AnimationContainer />', () => {
   });
 });
 ```
-Learn more on mocking Node Modules in [Jest documentation](https://jestjs.io/docs/en/manual-mocks#mocking-node-modules)
+Learn more on mocking Node modules in [Jest documentation](https://jestjs.io/docs/en/manual-mocks#mocking-node-modules)
 
 
 # License
