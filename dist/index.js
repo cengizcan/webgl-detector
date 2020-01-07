@@ -8,3 +8,11 @@ function isWebGLSupported() {
     return false;
 }
 exports.isWebGLSupported = isWebGLSupported;
+function isWebGL2Supported() {
+    if (WebGLRenderingContext != null) {
+        var canvas = document.createElement('canvas');
+        return canvas.getContext('webgl2') != null;
+    }
+    return false;
+}
+exports.isWebGL2Supported = isWebGL2Supported;
