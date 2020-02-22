@@ -1,17 +1,17 @@
 /**
  * @jest-environment jsdom
  */
-import { isWebGLSupported, isWebGL2Supported } from '../index';
+import { isWebGL2Supported, isWebGLSupported } from '../index';
 
 describe('WebGL detector tests', () => {
   const setup = (contextEnabled: boolean, contextType: string) => {
     Object.defineProperty(window, 'WebGLRenderingContext', {
+      value: contextEnabled ? true : undefined,
       writable: true,
-      value: contextEnabled ? true : null,
     });
     Object.defineProperty(document, 'createElement', {
-      writable: true,
       value: () => ({ getContext: (ctx: string) => ctx === contextType }),
+      writable: true,
     });
   };
   it('isWebGLSupported should return false if window.WebGLRenderingContext is not extists.', () => {
